@@ -101,8 +101,12 @@ python app.py
   - Logistic Regression (baseline, interpretable)
   - Random Forest (final, high-performing)
 - **Performance Metrics**:
-  - Accuracy: 90%+
-  - ROC-AUC: 0.91
+  - **Logistic Regresion** -
+    - Accuracy: 90%+
+    - ROC-AUC: 0.89
+  - **Random Forest** -
+    - Accuracy: 90%+
+    - ROC-AUC: 0.91
 - **Feature Importance** used to explain predictions
 
 ---
