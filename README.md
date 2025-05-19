@@ -5,6 +5,13 @@
 
 ---
 
+### 🖼️ User Interface Preview
+
+![Frontend Preview - 1](assets/frontend.png)
+![Frontend Preview - 2](assets/frontend.png)
+
+---
+
 ## 🧠 Project Summary
 
 FinRisk leverages **Random Forest** and **Logistic Regression** classifiers to predict whether a loan applicant is likely to default. The system is built with a focus on:
