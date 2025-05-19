@@ -10,9 +10,11 @@
 The following screenshots showcase the web-based user interface used to input borrower details and view credit risk predictions in real-time.
 
 * 📥 Input Form: Collects borrower attributes such as income, credit history, and loan amount
+  
 ![image](https://github.com/user-attachments/assets/454de4ff-53a3-4d69-9b07-d577df2bdb53)
 
 * 📊 Prediction Output: Displays risk classification, probability scores, and recommendations
+  
 ![image](https://github.com/user-attachments/assets/65274480-7889-489a-af3b-64b090b7ddf2)
 
 ---
