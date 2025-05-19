@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Risk Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            background-color: #f0f2f5;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #555;
+            text-align: left;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            text-align: left;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .modal-content h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .modal-content p {
+            font-size: 16px;
+            color: #555;
+        }
+        .close-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .close-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Risk Prediction Form</h1>
+        <form id="predictionForm">
+            <!-- Form Fields -->
+            <div class="form-group">
+                <label for="person_age">Person Age:</label>
+                <input type="number" id="person_age" name="person_age" required>
+            </div>
+            <div class="form-group">
+                <label for="person_income">Person Income:</label>
+                <input type="number" id="person_income" name="person_income" required>
+            </div>
+            <div class="form-group">
+                <label for="person_home_ownership">Home Ownership:</label>
+                <select id="person_home_ownership" name="person_home_ownership" required>
+                    <option value="MORTGAGE">Mortgage</option>
+                    <option value="OWN">Own</option>
+                    <option value="RENT">Rent</option>
+                    <option value="OTHER">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="person_emp_length">Employment Length:</label>
+                <input type="number" id="person_emp_length" name="person_emp_length" required>
+            </div>
+            <div class="form-group">
+                <label for="loan_intent">Loan Intent:</label>
+                <select id="loan_intent" name="loan_intent" required>
+                    <option value="DEBTCONSOLIDATION">Debt Consolidation</option>
+                    <option value="EDUCATION">Education</option>
+                    <option value="HOMEIMPROVEMENT">Home Improvement</option>
+                    <option value="MEDICAL">Medical</option>
+                    <option value="PERSONAL">Personal</option>
+                    <option value="VENTURE">Venture</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loan_grade">Loan Grade:</label>
+                <select id="loan_grade" name="loan_grade" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loan_amnt">Loan Amount:</label>
+                <input type="number" id="loan_amnt" name="loan_amnt" required>
+            </div>
+            <div class="form-group">
+                <label for="loan_int_rate">Interest Rate:</label>
+                <input type="number" id="loan_int_rate" name="loan_int_rate" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="loan_percent_income">Loan Percent Income:</label>
+                <input type="number" id="loan_percent_income" name="loan_percent_income" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="cb_person_default_on_file">Default on File (0 or 1):</label>
+                <input type="number" id="cb_person_default_on_file" name="cb_person_default_on_file" required>
+            </div>
+            <div class="form-group">
+                <label for="cb_person_cred_hist_length">Credit History Length:</label>
+                <input type="number" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" required>
+            </div>
+            <div class="form-group">
+                <label for="credit_history_to_employment_ratio">Credit History to Employment Ratio:</label>
+                <input type="number" id="credit_history_to_employment_ratio" name="credit_history_to_employment_ratio" step="0.01" required>
+            </div>
+            <!-- Add other form fields similar to above -->
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2>Prediction Results</h2>
+            <div id="resultContent"></div>
+            <button class="close-btn" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('resultModal');
+        const resultContent = document.getElementById('resultContent');
+        const closeModalButton = document.getElementById('closeModal');
+
+        document.getElementById('predictionForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const jsonData = Object.fromEntries(formData.entries());
+
+            Object.keys(jsonData).forEach(key => {
+                const value = jsonData[key];
+                jsonData[key] = isNaN(value) || key === 'loan_grade' || key === 'loan_intent' || key === 'person_home_ownership'
+                    ? value : parseFloat(value);
+            });
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(jsonData)
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    resultContent.innerHTML = `
+                        <p><strong>Probability (No Default):</strong> ${result.probabilities['P(No Default) (%)'][0]}</p>
+                        <p><strong>Probability (Default):</strong> ${result.probabilities['P(Default) (%)'][0]}</p>
+                        <p><strong>Prediction:</strong> ${result.predictions[0]}</p>
+                        <p><strong>Risk Level:</strong> ${result.risk[0].risk_label}</p>
+                        <p><strong>Recommendation:</strong> ${result.risk[0].recommendation}</p>
+                    `;
+                } else {
+                    resultContent.innerHTML = `<p><strong>Error:</strong> ${result.error}</p>`;
+                }
+                modal.style.display = 'flex';
+            } catch (error) {
+                alert('An error occurred: ' + error.message);
+            }
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

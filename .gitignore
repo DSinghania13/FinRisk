@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Model files (optional – if you don’t want to upload large models)
+# models/*.pkl
+
+# Data files (optional – if dataset is too large or private)
+# dataset/*.csv
+
+# Logs and other runtime files
+*.log
+
+# Python virtualenv
+*.egg-info/
+dist/
+build/
+
+# Flask session cache
+instance/
+*.sqlite3
