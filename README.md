@@ -138,6 +138,21 @@ The model is trained on a cleaned and encoded credit risk dataset that includes 
 
 ---
 
+## 📊 Visual Representation of Datasets
+
+These Power BI dashboards provide a comprehensive **visual analysis** of credit risk-related data. They illustrate patterns in loan distribution, borrower demographics, credit history, employment length, and more — enabling data-driven insights through intuitive **visual representations**.
+
+### Credit Risk Analysis Dashboard
+This dashboard highlights the distribution of loan purposes, loan grades, home ownership, income levels, and credit history across borrowers.
+
+![Credit Risk Analysis](https://github.com/DSinghania13/FinRisk/blob/main/src/img/Credit%20Risk%20Analysis.png)
+
+### Loans Availed in 2007
+This dashboard focuses on loan data from 2007, showcasing relationships between interest rates, annual income, employment length, and credit history by age.
+
+![Loans Availed in 2007](https://github.com/DSinghania13/FinRisk/blob/main/src/img/Loans%20Availed%20in%202007.png)
+
+
 ## 🧪 Future Enhancements
 
 - Integration of **XGBoost/LightGBM**
