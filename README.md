@@ -152,6 +152,7 @@ This dashboard focuses on loan data from 2007, showcasing relationships between 
 
 ![Loans Availed in 2007](https://github.com/DSinghania13/FinRisk/blob/main/src/img/Loans%20Availed%20in%202007.png)
 
+---
 
 ## 🧪 Future Enhancements
 
