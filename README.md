@@ -11,11 +11,11 @@ The following screenshots showcase the web-based user interface used to input bo
 
 * 📥 Input Form: Collects borrower attributes such as income, credit history, and loan amount
   
-![image](https://github.com/user-attachments/assets/454de4ff-53a3-4d69-9b07-d577df2bdb53)
+![Credit Risk Analysis](https://github.com/user-attachments/assets/afccf48d-3472-4d80-9f03-3fbc72553d07)
 
 * 📊 Prediction Output: Displays risk classification, probability scores, and recommendations
   
-![image](https://github.com/user-attachments/assets/65274480-7889-489a-af3b-64b090b7ddf2)
+![Loans Availed in 2007](https://github.com/user-attachments/assets/c17b7724-2bfe-4194-965c-a3ac3d555394)
 
 ---
 
