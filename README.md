@@ -11,11 +11,12 @@ The following screenshots showcase the web-based user interface used to input bo
 
 * 📥 Input Form: Collects borrower attributes such as income, credit history, and loan amount
   
-![Credit Risk Analysis](https://github.com/user-attachments/assets/afccf48d-3472-4d80-9f03-3fbc72553d07)
+<img width="805" alt="Credit Risk Prediction Form" src="https://github.com/user-attachments/assets/774a4f0f-4efa-4cf3-b1b9-d160385b1673" />
+
 
 * 📊 Prediction Output: Displays risk classification, probability scores, and recommendations
   
-![Loans Availed in 2007](https://github.com/user-attachments/assets/c17b7724-2bfe-4194-965c-a3ac3d555394)
+<img width="777" alt="Prediction Result" src="https://github.com/user-attachments/assets/3f9cb68a-cf17-4294-ae81-722620806001" />
 
 ---
 
@@ -96,12 +97,14 @@ These Power BI dashboards provide a comprehensive **visual analysis** of credit 
 ### Credit Risk Analysis Dashboard
 This dashboard highlights the distribution of loan purposes, loan grades, home ownership, income levels, and credit history across borrowers.
 
-![Credit Risk Analysis](https://github.com/user-attachments/assets/afccf48d-3472-4d80-9f03-3fbc72553d07)
+![Credit Risk Analysis](https://github.com/user-attachments/assets/3566aabf-ac60-4406-abe5-d7f21db7eb6c)
+
 
 ### Loans Availed in 2007
 This dashboard focuses on loan data from 2007, showcasing relationships between interest rates, annual income, employment length, and credit history by age.
 
-![Loans Availed in 2007](https://github.com/user-attachments/assets/c17b7724-2bfe-4194-965c-a3ac3d555394)
+![Loans Availed in 2007](https://github.com/user-attachments/assets/8724783b-50ba-4108-beaa-ec9ba032078b)
+
 
 ---
 
