@@ -96,12 +96,12 @@ These Power BI dashboards provide a comprehensive **visual analysis** of credit 
 ### Credit Risk Analysis Dashboard
 This dashboard highlights the distribution of loan purposes, loan grades, home ownership, income levels, and credit history across borrowers.
 
-![Credit Risk Analysis](https://github.com/DSinghania13/FinRisk/blob/main/src/img/Credit%20Risk%20Analysis.png)
+![Credit Risk Analysis](https://github.com/user-attachments/assets/afccf48d-3472-4d80-9f03-3fbc72553d07)
 
 ### Loans Availed in 2007
 This dashboard focuses on loan data from 2007, showcasing relationships between interest rates, annual income, employment length, and credit history by age.
 
-![Loans Availed in 2007](https://github.com/DSinghania13/FinRisk/blob/main/src/img/Loans%20Availed%20in%202007.png)
+![Loans Availed in 2007](https://github.com/user-attachments/assets/c17b7724-2bfe-4194-965c-a3ac3d555394)
 
 ---
 
