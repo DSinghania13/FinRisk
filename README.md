@@ -180,3 +180,10 @@ python app.py
 > _“Lend smarter, risk lesser” – because every informed decision counts in finance._
 
 ---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute this software with proper attribution.
+
+---
