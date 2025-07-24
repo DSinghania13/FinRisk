@@ -5,7 +5,7 @@
 
 ## 🔗 Live Demo
 
-Access the live project here: [View Deployed App](https://your-vercel-url.vercel.app)
+Access the live project here: [View Deployed App](https://fin-risk-deployment.vercel.app)
 
 ---
 
