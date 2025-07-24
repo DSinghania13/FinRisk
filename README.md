@@ -3,6 +3,10 @@
 
 **FinRisk** is a machine learning-driven credit risk prediction system designed to help lending institutions assess the likelihood of loan default using real-world financial data. The platform empowers organizations to make informed, data-backed lending decisions by leveraging advanced classification algorithms and interpretable AI models.
 
+## 🔗 Live Demo
+
+Access the live project here: [View Deployed App](https://your-vercel-url.vercel.app)
+
 ---
 
 ### 🖼️ User Interface Preview
@@ -27,6 +31,23 @@ FinRisk leverages **Random Forest** and **Logistic Regression** classifiers to p
 - High **accuracy** and **recall**
 - Strong **model interpretability**
 - Deployment readiness via a **Flask web interface**
+
+---
+
+## 📊 Visual Representation of Datasets
+
+These Power BI dashboards provide a comprehensive **visual analysis** of credit risk-related data. They illustrate patterns in loan distribution, borrower demographics, credit history, employment length, and more — enabling data-driven insights through intuitive **visual representations**.
+
+### Credit Risk Analysis Dashboard
+This dashboard highlights the distribution of loan purposes, loan grades, home ownership, income levels, and credit history across borrowers.
+
+![Credit Risk Analysis](https://github.com/user-attachments/assets/3566aabf-ac60-4406-abe5-d7f21db7eb6c)
+
+
+### Loans Availed in 2007
+This dashboard focuses on loan data from 2007, showcasing relationships between interest rates, annual income, employment length, and credit history by age.
+
+![Loans Availed in 2007](https://github.com/user-attachments/assets/8724783b-50ba-4108-beaa-ec9ba032078b)
 
 ---
 
@@ -87,24 +108,6 @@ The model is trained on a cleaned and encoded credit risk dataset that includes 
 - Credit History and Default Status
 
 *(Original source: Kaggle's Lending Club dataset)*
-
----
-
-## 📊 Visual Representation of Datasets
-
-These Power BI dashboards provide a comprehensive **visual analysis** of credit risk-related data. They illustrate patterns in loan distribution, borrower demographics, credit history, employment length, and more — enabling data-driven insights through intuitive **visual representations**.
-
-### Credit Risk Analysis Dashboard
-This dashboard highlights the distribution of loan purposes, loan grades, home ownership, income levels, and credit history across borrowers.
-
-![Credit Risk Analysis](https://github.com/user-attachments/assets/3566aabf-ac60-4406-abe5-d7f21db7eb6c)
-
-
-### Loans Availed in 2007
-This dashboard focuses on loan data from 2007, showcasing relationships between interest rates, annual income, employment length, and credit history by age.
-
-![Loans Availed in 2007](https://github.com/user-attachments/assets/8724783b-50ba-4108-beaa-ec9ba032078b)
-
 
 ---
 
