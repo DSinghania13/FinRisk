@@ -5,7 +5,7 @@
 
 ## 🔗 Live Demo
 
-Access the live project here: [View Deployed App](https://fin-risk-deployment.vercel.app)
+Access the live project here: [View Deployed App](https://finrisk-ai.vercel.app/)
 
 ---
 
