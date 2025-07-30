@@ -176,6 +176,7 @@ python app.py
 - [Divit Singhania](https://www.linkedin.com/in/divit-singhania-13401628a/)
 - Gaurav Lodhi  
 - [Abhijeet Dubey](https://www.linkedin.com/in/aiabhijeet/)
+- [Ansh Ahuja](https://www.github.com/ansh-p1)
 
 > _“Lend smarter, risk lesser” – because every informed decision counts in finance._
 
